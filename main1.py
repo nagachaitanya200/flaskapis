@@ -8,8 +8,6 @@ dic = [
     {'id': '3', 'name': 'mno'}
 ]
 
-
-
 @app.route('/', methods=["GET"])
 def home():
     return jsonify(dic)
@@ -55,4 +53,5 @@ def get_employee(id):
 
 
 if __name__ == '__main__':
+    print("debugging")
     app.run(debug=True,port=5000)
